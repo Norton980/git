@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* Cartão de contatos */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos links */
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Ícones */
+.link-item i {
+  font-size: 28px;
+  width: 32px;
+  text-align: center;
+}
+
+/* Texto */
+.link-item div {
+  text-align: left;
+}
+
+.link-item strong {
+  display: block;
+  font-size: 16px;
+}
+
+.link-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Hover com cores específicas */
+.link-item:hover {
+  color: #fff;
+}
+
+.link-item:hover i,
+.link-item:hover strong,
+.link-item:hover p {
+  color: #fff;
+}
+
+.link-item[href*="instagram"]:hover {
+  background-color: #E1306C;
+}
+
+.link-item[href*="tiktok"]:hover {
+  background-color: #000;
+}
+
+.link-item[href*="github"]:hover {
+  background-color: #333;
+}
+
+.link-item[href*="wa.me"]:hover {
+  background-color: #25D366;
+}
+
+.link-item[href*="mailto"]:hover {
+  background-color: #D44638;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+
+  .link-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-item i {
+    font-size: 24px;
+  }
+}
