@@ -20,7 +20,7 @@ const links = [
   {
     nome: "WhatsApp",
     descricao: "Fale comigo",
-    url: "https://wa.me/5551987654321",
+    url: "https://wa.me/5551987654321?text=gostaria de mais informações",
     icone: "fab fa-whatsapp"
   },
   {
